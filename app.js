@@ -3,12 +3,11 @@ console.log('---------------関数-----------------')
 // funstion 関数名(){
 // 	処理
 // }
-function myalert(){
+// function myalert(){
 	// alert('自作関数からhello');
 	// アラートを表示したあとにも自由に処理を追加できる
 
-	let hantei = confirm('このボタン押してもいいですか？');
-	let messageSpan = document.getElementById('message');
+// let hantei = confirm('このボタン押してもいいですか？');
 // console.log(hantei);
 
 
@@ -17,14 +16,12 @@ function myalert(){
 // キャンセルが押されたら「やり直し」
 // とコンソールに表示しましょう。
 
-if (hantei === true ) {
-	console.log('大丈夫');
-		messageSpan.textContent = '大丈夫';
-}else{
-	console.log('やり直し');
-		messageSpan.textContent = 'やり直し';
-}
-}
+// if (hantei === true ) {
+// 	console.log('大丈夫');
+// }else{
+// 	console.log('やり直し');
+// }
+// }
 
 // 文字の変え方
 let messageSpan = document.getElementById('message');
@@ -36,15 +33,14 @@ messageSpan.style.color = 'blue';
 // キャンセルが押されたら「やり直し」
 // とid="message"のspanタグの部分に表示しましょう
 
-
-// if (hantei === true) {
-// 	messageSpan.textContent = '大丈夫';
-// }else{
-// 	messageSpan.textContent = 'やり直し';
-// }
-// }
-
-// function myalert(){
-// messageSpan = document.getElementById('message'); {
-// 		messageSpan.textContent = '大丈夫';}
-// }
+function myalert(){
+	let hantei = confirm('このボタン押してもいいですか？');
+	let messageSpan = document.getElementById('message');
+	if (hantei === true ) {
+	console.log('大丈夫');
+		messageSpan.textContent = '大丈夫';
+}else{
+	console.log('やり直し');
+		messageSpan.textContent = 'やり直し';
+}
+}
